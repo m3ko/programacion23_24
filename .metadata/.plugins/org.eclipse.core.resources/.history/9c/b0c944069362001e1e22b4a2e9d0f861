@@ -1,0 +1,22 @@
+package ejercicio2_3;
+
+public class ejercicio10 {
+
+	public static void main(String[] args) {
+
+		// Escribir un programa para que pida un número y muestre 
+		//en pantalla el mismo número de asteriscos. (en distintas líneas).
+
+		int cont = 0;
+		
+		
+		while (cont == 10) {
+			 cont = cont + 1;
+			 System.out.println("*");
+			 }
+		}
+		
+	}
+
+
+

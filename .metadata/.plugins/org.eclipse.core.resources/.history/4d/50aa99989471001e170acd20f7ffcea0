@@ -1,0 +1,24 @@
+package Arrai;
+
+import java.util.Scanner;
+
+public class seis6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner(System.in);
+
+		String[] palabras = {"Andrea", "Pepe", "Ian", "Pablo", "Sofia"};
+		System.out.println("Escribe un nombre para confirmar que esta en el Array");
+		String aux = scan.next();
+		boolean x = false;
+		for (int i = 0; i < 5; i++) {
+			if (palabras[i].equals(aux)) {
+				x = true;
+			} 
+			System.out.println(x);
+		}
+		scan.close();
+	}
+}

@@ -1,0 +1,44 @@
+package no_se;
+import java.util.Scanner;
+public class examenarrais {
+
+	public static void main(String[] args) {
+		
+		// 1- Escribe un programa que pida un número por teclado y 
+		//cree un array del tamaño de ese número y pida llenarlo 
+		//con enteros y/o decimales. El programa tendrá que 
+		//mostrar por pantalla el array, el valor más alto, el más bajo y el promedio.
+		
+		//2- Escribe un programa que cree un array del tamaño que se le indique, 
+		//y que pida llenarlo con nombres de alumnos. 
+		//Ante un nombre que se introduzca por pantalla, el programa 
+		//debe indicar si el nombre está en el array o no.
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Introduzca un número");
+		int aux = scan.nextInt();
+		
+		double num[]=new double[aux];
+		
+		double mayor = Double.MAX_VALUE;
+		double menor = Double.MIN_VALUE;
+		
+		for(int i = 0; i < aux; i++) {
+			
+			System.out.println("Introduzca numeros para llenar le array");
+			double aux2 = scan.nextDouble();
+			num[i]=aux2;				
+		}
+	
+				
+				for(int i = 0; i < aux; i++) {
+					System.out.println(num[i]);
+					
+				}
+				
+				
+		
+
+	}
+
+}

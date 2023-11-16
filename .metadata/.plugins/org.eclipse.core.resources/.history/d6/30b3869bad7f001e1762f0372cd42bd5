@@ -1,0 +1,35 @@
+package Arrai;
+
+import java.util.Scanner;
+public class once11 {
+
+	public static void main(String[] args) {
+// Definir y rellenar un array de 10 (por programación). Pedir una cadena y en la pantalla tiene que aparecer
+		//los nombres que contengan la cadena. Es decir, realizar una especie de búsqueda.
+
+
+		Scanner scan = new Scanner(System.in);
+		String[] nombres = {"Ana", "Roberto", "Laura", "Juan", "María", "Luis", "Gabriela", "Carlos", "Paula", "Javier", "Valeria", "Andrés", "Natalia", "Sergio", "Carmen", "Diego", "Sofía", "Miguel", "Adriana", "Alejandro"};
+		String nombreIndicado = "";
+		String resultado = "";
+		System.out.print("Indica un nombre para saber sí está en la lista.");
+		nombreIndicado = scan.nextLine();
+		resultado = nombreIndicado + " no está en la lista";
+		for(int i = 0; i < 20 ; i++) {
+			
+			
+			if(nombreIndicado.equals(nombres[i])) {
+				
+				resultado = nombreIndicado + " está en la lista";
+				
+			
+			}	
+			}
+		scan.close();
+		System.out.print(resultado);
+			
+		}
+		
+	}
+
+

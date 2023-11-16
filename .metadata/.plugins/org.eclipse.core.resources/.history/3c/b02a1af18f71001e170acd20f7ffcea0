@@ -1,0 +1,30 @@
+package Arrai;
+
+import java.util.Scanner;
+
+public class cinco5 {
+
+	public static void main(String[] args) {
+		// Definir un array de la longitud 5 y llenar con nombres.
+		// Visualizar los nombres que empiecen por ‘a’.
+
+		Scanner scan = new Scanner(System.in);
+
+		String[] palabras = new String[5];
+		String a = "";
+
+		for (int i = 0; i < 5; i++) {
+
+			System.out.print("Escribe 5 palabras");
+			palabras[i] = scan.next();
+		}
+		for(int i = 0; i < 5; i++ {
+			if (palabras[i].substring(0,1).equals("a")) {
+				System.out.print(palabras[i]);
+			}
+		}
+		System.out.print(a);
+		scan.close();
+
+	}
+}

@@ -1,0 +1,45 @@
+package Arrai;
+
+public class diez10 {
+
+	public static void main(String[] args) {
+		// Teniendo como datos la edad y el nombre de los alumnos del aula se desea
+		// sacar por pantalla la siguiente información:
+		// El número de alumnos menores de 20 años incluidos éstos.
+		// La edad media del aula.
+		// Nombre y edad del alumno más joven
+		
+		
+		int menores = 0;
+		int media = 0;
+		int edadMenor = 0;
+		String nombreMenor = "";
+		
+		String[] nombres = { "Ana García", "Roberto Mendoza", "Laura Ramírez", "Juan Torres", "María Vargas",
+				"Luis Sánchez", "Gabriela López", "Carlos Martínez", "Paula Rodríguez", "Javier Jiménez",
+				"Valeria Ruiz", "Andrés Castro", "Natalia Herrera", "Sergio González", "Carmen Medina", "Diego Ortega",
+				"Sofía Flores", "Miguel Silva", "Adriana Pérez", "Alejandro Ramos" };
+
+		int[] edades = { 18, 19, 20, 21, 22, 16, 17, 18, 19, 20, 17, 18, 19, 20, 21, 23, 16, 22, 18, 19, 20 };
+	
+		
+		for(int i = 0;i<20;i++) {
+			
+			if(edades[i]<18) {
+				
+				menores = menores + 1;
+				media = edades[i]+media;
+				
+			};
+			
+		
+		int edadaux = 0;
+		int edadauxSig = 0;
+		
+		
+		
+		}
+		System.out.print(menores + " " + media/20 );	
+	}
+
+}

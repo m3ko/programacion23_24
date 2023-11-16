@@ -1,0 +1,49 @@
+package Metodos;
+
+import java.util.Scanner;
+
+public class EJer2_2 {
+
+	public static void main(String[] args) {
+
+//		Crear un método (función) que reciba un double “cantidadDeDinero” 
+//		y un char “monedaDeCambio”
+//		Si recibe una D quiere decir que la cantidadEsta en Euros y 
+//		tiene que devolver en Dólares. Tiene que funcionar con “monedaDeCambio” 
+//		mayúsculas y minúsculas.
+		
+		Scanner scan = new Scanner(System.in);
+		double cant = 0;
+		char mon;
+		
+		System.out.println("Introduce una cantidad");
+		cant = scan.nextDouble();
+		System.out.println("Introduce metodo de conversion (D/E)");
+		mon = scan.next().charAt(0);
+		System.out.println(converEurDol(cant, mon));
+		scan.close();
+
+	}
+
+	public static double converEurDol(double cant, char mon) {
+
+	
+
+		
+		double result = 0;
+
+		
+
+		if (Character.toString(mon).equalsIgnoreCase("D")) {
+			result = cant * 1.07;
+			
+		} else {
+			System.out.println("");
+			System.out.println("Error en la conversion, devolviendo valor inicial: ");
+			result = cant;
+		}
+
+		return result;
+
+	}
+}

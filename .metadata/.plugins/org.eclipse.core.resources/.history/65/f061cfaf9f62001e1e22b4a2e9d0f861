@@ -1,0 +1,26 @@
+package ejercicio2_3;
+
+import java.util.Scanner;
+
+public class ejercicio13 {
+
+	public static void main(String[] args) {
+		// Escribir un programa que escriba de 0 a un número introducido por el usuario.
+
+
+		int num = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Indica un numero");
+		num = scan.nextInt();
+
+		scan.close();
+
+
+				
+		for (int i = 1;i <= num;i++) {
+			System.out.println(i);
+		}
+
+	}}

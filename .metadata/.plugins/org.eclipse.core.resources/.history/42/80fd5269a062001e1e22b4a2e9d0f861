@@ -1,0 +1,25 @@
+package ejercicio2_3;
+
+import java.util.Scanner;
+
+public class ejercicio14 {
+
+	public static void main(String[] args) {
+		//Escribir un programa que visualice los múltiplos de 3 que están entre 0 y 20.
+
+		int num = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Indica un numero");
+		num = scan.nextInt();
+
+		scan.close();
+
+
+				
+		for (int i = 1;i <= 20;i++) {
+			System.out.print(3*i);
+		}
+
+	}}

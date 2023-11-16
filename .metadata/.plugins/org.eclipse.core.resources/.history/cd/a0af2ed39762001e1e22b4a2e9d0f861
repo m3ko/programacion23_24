@@ -1,0 +1,30 @@
+package ejercicio2_3;
+
+import java.util.Scanner;
+
+public class ejercicio10 {
+
+	public static void main(String[] args) {
+
+		// Escribir un programa para que pida un número y muestre 
+		//en pantalla el mismo número de asteriscos. (en distintas líneas).
+
+		int cont = 0;
+		int num = 0;
+		Scanner scan = new Scanner(System.in);
+
+
+		System.out.println("Indica un Número");
+		num = Integer.parseInt(scan.nextLine());
+		scan.close();
+		
+		while (cont < num) {
+			 cont = cont + 1;
+			 System.out.println("*");
+			 }
+		}
+		
+	}
+
+
+

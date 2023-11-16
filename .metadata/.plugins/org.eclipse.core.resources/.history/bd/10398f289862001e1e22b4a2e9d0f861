@@ -1,0 +1,26 @@
+package ejercicio2_3;
+
+import java.util.Scanner;
+
+public class ejercicio11 {
+
+	// Escribir un programa para que pida un número y muestre en pantalla
+	// el mismo número de asteriscos. (en la misma línea) La instrucción
+	// salida tiene que ir al final del programa, fuera del iterador.
+	// (Resolver con for-para y while-mientras)
+	public static void main(String[] args) {
+		int cont = 0;
+		int num1, num2;
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("mete 2  números");
+		num1 = sc.nextInt();
+		num2 = sc.nextInt();
+		sc.close();
+
+		for (int i = num1; num1 < num2; num1++) {
+			System.out.println(num1);
+		}
+
+	}
+}

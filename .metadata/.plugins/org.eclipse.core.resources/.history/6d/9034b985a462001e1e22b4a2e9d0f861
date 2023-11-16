@@ -1,0 +1,27 @@
+package ejercicio2_3;
+
+import java.util.Scanner;
+
+public class ejercicio16 {
+
+	public static void main(String[] args) {
+		// Pedir 10 números y visualizar en pantalla el mayor.
+
+Scanner scan = new Scanner(System.in);
+		
+        int num,mayor= 0;
+        
+		
+
+		for (int i=0; i<= 10;i++) {
+			System.out.println("Indica un numero");
+			num = scan.nextInt();
+					if(num>mayor) {
+					num=mayor;
+					};
+					};
+			
+		}
+
+
+	}

@@ -1,0 +1,36 @@
+package Arrai;
+
+import java.util.Scanner;
+
+public class doce12 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Programa que lee por teclado la nota de los alumnos de una clase y calcula la
+		 * nota media del grupo. También muestra los alumnos con notas superiores a la
+		 * media. El número de alumnos se lee por teclado. Este programa utiliza un
+		 * array de elementos de tipo double que contendrá las notas de los alumnos. El
+		 * tamaño del array será el número de alumnos de la clase, por lo tanto primero
+		 * se pedirá por teclado el número de alumnos y a continuación se creará el
+		 * array. Se realizan 3 recorridos sobre el array, el primero para asignar a
+		 * cada elemento las notas introducidas por teclado, el segundo para sumarlas y
+		 * calcular la media y el tercero para mostrar los alumnos con notas superiores
+		 * a la media.
+		 */
+		Scanner scan = new Scanner(System.in);
+		int numAlumn = 0;
+
+		System.out.print("Cuantos alumnos hay en la clase");
+		numAlumn = scan.nextInt();
+
+		int[] notas = new int[numAlumn];
+
+		for (int i = 0; i < numAlumn; i++) {
+
+			System.out.print("Indica las notas de la clase. ");
+			notas[i] = Integer.parseInt(scan.nextLine());
+
+		}
+	}
+}

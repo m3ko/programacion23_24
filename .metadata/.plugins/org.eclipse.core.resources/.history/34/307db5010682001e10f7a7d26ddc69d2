@@ -1,0 +1,26 @@
+package Metodos;
+import java.util.Scanner;
+public class ejer1 {
+
+		public static int converEurPes (int euros) {
+		return euros*166;
+				}
+		public static int converPesEur (int pesetas) {
+			return pesetas/166;
+		}
+	public static void main(String[] args) {
+		//Crear un método para que convierta, la cantidad introducida en Euros a pesetas.
+	
+		
+	
+
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Introduzca una cantidad de Euros para hacer la converión a pesetas");
+		int eur = scan.nextInt();
+		
+		int resultado = converEurPes(eur);
+		System.out.print(resultado + " pesetas.");
+		scan.close();
+		
+}
+}
